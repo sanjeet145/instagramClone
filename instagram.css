@@ -1,0 +1,170 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 6vh;
+}
+.phone{
+    background-image: url(./images/home-phones.png);
+    background-repeat: no-repeat;
+    width: 430px;
+}
+.phone{
+    padding-top: 27px;
+    padding-left: 156px;
+    overflow: hidden;
+    position: relative;
+}
+.phone img{
+    object-fit: cover;
+      position: absolute;
+      opacity: 0;
+    transition: changeImage 1s infinite ;
+}
+.phone img.active {
+    opacity: 1;
+  }
+@keyframes changeImage {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+.container{
+    height: 600px;
+    width: 350px;
+    margin-left: 35px;
+    margin-right: 5%;
+}
+
+
+.box1{
+  height: 73%;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.148);
+}
+.image{
+  padding-top:45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login{
+  margin-top: 35px;
+  height: 58%;
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+}
+form{
+  width: 290px;
+  height: 180px;
+}
+.login #user,#pass{
+  margin: 3px;
+  height: 36px;
+  width: 280px;
+  border: 1px solid rgba(0, 0, 0, 0.141);
+  background-color: #fafafa;
+}
+#pass{
+  margin-bottom: 10px;
+}
+.login #check{
+  height: 17px;
+  width: 17px;
+}
+
+.login a{
+  font-size: 14px;
+  font-weight: 100;
+  margin-top: 10px;
+}
+.login span{
+  margin-top: 1px;
+}
+.login .facebook{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.facebook a{
+  color: rgba(41, 41, 142, 0.896);
+  font-weight: 500;
+  cursor: pointer;
+}
+.forgot a{
+  text-decoration: none;
+  color: black;
+  font-size: small;
+}
+.login button{
+  margin: 3px;
+  margin-top: 20px;
+  height: 32px;
+  width: 285px;
+  color: white;
+  border: 0;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: rgb(86, 162, 232);
+}
+
+.signup{
+  height: 10%;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 100;
+  color: rgb(66, 66, 66);
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.148);
+}
+.signup a{
+  font-weight: 500;
+  text-decoration: none;
+  color: rgb(67, 141, 211);
+}
+.app{
+  height: 13%;
+  margin-top: 16px;
+  display: grid;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 100;
+  color: rgb(37, 36, 36);
+  
+}
+.app .img{
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+footer{
+  display: flex;
+  place-items: center;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width:874px){
+  .phone{
+    display: none;
+  }
+}
