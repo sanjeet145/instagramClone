@@ -21,29 +21,31 @@ body{
     overflow: hidden;
     position: relative;
 }
-.phone img{
-    object-fit: cover;
-      position: absolute;
-      opacity: 0;
-    transition: changeImage 1s infinite ;
+.phoImage{
+  width: 400px;
+  height: 100%;
+  background-image: url(./images/screenshot1.png);
+  background-repeat: no-repeat;
+  animation: phImage 7s  infinite;
 }
-.phone img.active {
-    opacity: 1;
+@keyframes phImage {
+  0%{
+    background-image: url(./images/screenshot1.png);
+    background-repeat: no-repeat;
   }
-@keyframes changeImage {
-    0% {
-      opacity: 0;
-    }
-    20% {
-      opacity: 1;
-    }
-    80% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
+  35%{
+    background-image: url(./images/screenshot2.png);
+    background-repeat: no-repeat;
   }
+  70%{
+    background-image: url(./images/screenshot3.png);
+    background-repeat: no-repeat;
+  }
+  100%{
+    background-image: url(./images/screenshot4.png);
+    background-repeat: no-repeat;
+  }
+}
 
 .container{
     height: 600px;
