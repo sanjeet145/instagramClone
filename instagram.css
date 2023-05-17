@@ -165,8 +165,16 @@ footer{
   justify-content: space-around;
 }
 
-@media only screen and (max-width:874px){
+@media only screen and (max-width:874px)and (min-width:425px){
   .phone{
     display: none;
+  }
+}
+@media only screen and (max-width:425px){
+  .phone{
+    display: none;
+  }
+  .box1{
+    border: none;
   }
 }
